@@ -1,0 +1,251 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 16px;
+    font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif;
+    -webkit-font-smoothing: antialiased;
+
+}
+ul,li{
+    text-decoration: none;
+    list-style-type: none;
+}
+body{
+    background-color: #181818;
+}
+.logo img{
+   width: 6.5rem;
+   height: auto;
+}
+nav{
+    position: fixed;
+    width: 100%;
+    display: flex;
+    background-color: black;
+    height: 60px;
+}
+.navbar{
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+.navbar img{
+    padding-left: 20px;
+}
+.buttons{
+    width:1200px;
+    justify-content: end;
+    display: flex; 
+    padding-right: 10px;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.buttons p{
+    padding: 5px;
+    font-size: 12px;
+    display: flex;
+}
+.a{
+    display: flex;
+    cursor: pointer;
+    background-color: rgb(231, 25, 25);
+    padding: 5px;
+    margin: 4px;
+    border: none;
+    border-radius: 2px;
+}
+.a:hover{
+    background-color: rgb(224, 49, 49);
+}
+.b{
+    border-radius: 2px;
+    cursor: pointer;
+    background-color: white;
+    padding: 5px;
+    margin: 4px;
+    background-color: black;
+    border: 1px solid white;
+    color: white;
+}
+.b:hover{
+    background-color: rgb(71, 71, 70);
+}
+main{
+    display: flex;
+    color: white;
+    padding: 80px 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    flex-direction: column;
+}
+.container{
+    padding: 10px;
+    text-align:left;
+}
+.category{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding-left: 10px;
+}
+.category .pop p{
+    padding-top: 20px;
+    font-size: 18px;
+}
+
+/* Slide Bölümü*/
+.slideshow-container{
+    padding:10px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+}
+.mySlides{
+    transition: all 300ms ease-in-out;
+}
+.mySlides img{
+    border-radius: 8px;
+    max-width: 18rem;
+    cursor: grab;
+    padding: 4px;
+}
+.text{
+    display: flex;
+    justify-content: center;
+    padding-top: 5px;
+}
+
+.category .aksyion p{
+    font-size: 18px;
+}
+.category .aksyion {
+    padding-top: 10px;
+}
+
+.category .komedi p {
+    padding-top: 10px;
+    font-size: 18px;
+}
+
+/*---Footer--*/
+footer{
+  
+    background-color: #181818; 
+    z-index: -1; 
+}
+.footer .mySlides{
+   opacity: 0.1; 
+   filter: blur(8px);
+  -webkit-filter: blur(8px);
+}
+.content{
+    color: white;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-top: -5rem;
+    text-align: center;
+}
+.content h2{
+    padding: 40px;
+}
+.katılbtn{
+   
+    padding-bottom: 5rem;
+    padding-top: 2rem;
+}
+.katılbtn input[type=button]{
+    background-color: rgb(231, 25, 25);
+    width: 14rem;
+    padding: 0.9rem;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 1.3rem;
+}
+.katılbtn input:hover{
+    background-color: rgb(212, 41, 41);
+}
+.sss{
+    padding-left: 6rem;
+    color: #525050;
+}
+.sss:hover{
+    text-decoration: underline;
+}
+.content_1{
+    color: #525050;
+    padding: 4rem;
+    display: flex;
+}
+.content_1 .items ul{
+    padding-left: 2rem;
+}
+.content_1 li:hover{
+    text-decoration: underline;
+}
+
+/*----Media--- */
+@media screen and (max-width: 600px) {
+    html{
+        font-size: 14px;
+    }
+    .logo img{
+        width: 5rem;
+        height: auto;
+     }
+     .text{
+         font-size: 12px;
+     }
+     .category p{
+         font-size: 12;
+     }
+     nav{
+         opacity: 0.8;
+     }
+    }
+
+    @media screen and (max-width: 400px) {
+        html{
+            font-size: 12px;
+        }
+        .logo img{
+            width: 4rem;
+            height: auto;
+         }
+         .buttons p{
+            padding: 5px;
+            font-size: 8px;
+            display: flex;
+        }
+        .buttons{
+            width:600px;
+            justify-content: end;
+            display: flex; 
+            
+            align-items: center;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .a{
+            font-size: 8px;
+        }
+        .b{
+            font-size: 8px;
+        }
+      }
+
+      @media screen and (max-width: 300px){
+            html{
+                font-size: 9px;
+            }
+            .logo img{
+                width: 5rem;
+                height: auto;
+             }
+      }
+
+  
